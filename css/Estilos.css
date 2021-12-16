@@ -1,28 +1,201 @@
-/*Reset de CSS*/
 *{
     margin: 0%;
     padding: 0%;
+
+} 
+/*ESTILO NAVEGADOR*/
+nav{
+    background-color:  rgba(20, 20, 20, 0.75);
+    width: 100%;
+    height: 100px;
+    text-align: center;  
+    border-top: 12px solid rgba(70, 236, 37, 0.8);
+    position: fixed;
+    font-family: 'Bebas Neue', cursive;;
+    display: flex;
+}
+/*ESTILO LISTA NAV*/
+li{
+    font-size: 140%;
+    width: 100%;
+    text-align: center;
+}
+.textoNav{
+    color:rgb(255, 255, 255);
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+}    
+/*ESTILO LISTA NAV*/
+ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}   
+.logo{
+    height: 100%;
+    width: 10%;
+    display: flex;
+    align-items: flex-start;
+    
+}
+/*ESTILO HEADER*/
+header{
+    padding-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
+}
+/*ESTILO FOOTER*/
+.redes{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
+    font-family: 'Bebas Neue', cursive;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.derechos{
+    height: 300px;
+    width: 100%;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    align-items: flex-end;
+    color: white;
+}
+.logoRedes{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;    
+    padding-left: 40%;   
+}
+/*MAIN HOME*/
+main{
+    background: linear-gradient(to right,rgba(51, 51, 51, 0.5),rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 1500px;
+    
+}
+.imgAerea{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100%;
+    width: 100%;
+}
+.carousel{
+    margin-left: 10%;
+    width: 85%;
+    padding-top: 50px;   
+}
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 130px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+/*MAIN TRABAJA*/
+.mainTrabaja{
+    height: 100%;
+    width: 100%;
+}
+.tituloTrabaja{
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(20, 20, 20);
+    background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}   
+.introTrabaja{
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(20, 20, 20)
+}
+.tarjetas{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 20px;
+    width: 100%;
+}
+.form{
+    width: 100%;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+/*MAIN PRODUCTOS*/
+.tarjetasProductos{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 20px;
+    padding-left: 25%;
+    width: 75%;
+
+}
+.formProductos{
+    background-color: rgba(255, 255, 255, 0.466);
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+}
+/*MAIN NOSOTROS*/
+.fotoNosotros{
+    display: flex;
+    justify-content: center;
+}
+/*MAIN CONTACTOS*/
+.mapa{
+    padding-top: 150px;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 }
 @media only screen and (max-width:600px){
     /*ESTILO NAVEGADOR*/
     nav{
-        background-color: rgb(233, 225, 213);
-        font-family: 'M PLUS 2', sans-serif;
+        background-color:  rgba(20, 20, 20, 0.75);
         width: 100%;
-        height: 250px;
+        height: 350px;
         text-align: center;  
-        border-top: 12px solid rgba(70, 236, 37, 0.616);
-        position:absolute;
-
+        border-top: 12px solid rgba(70, 236, 37, 0.8);
+        position: fixed;
+        font-family: 'Bebas Neue', cursive;;
+        display: flex;
     }
     /*ESTILO LISTA NAV*/
     li{
-        color: black;
-        font-size: 30px;
+        font-size: 140%;
         width: 100%;
         text-align: center;
     }
+    .textoNav{
+        color:rgb(255, 255, 255);
+        font-family: 'Bebas Neue', cursive;
+        text-decoration: none;
+    }    
     /*ESTILO LISTA NAV*/
     ul{
         height: 100%;
@@ -32,1198 +205,698 @@
         flex-direction: column;
         justify-content: space-evenly;
     }   
+    .logo{
+        height: 0%;
+        width: 0%;  
+    }
     /*ESTILO HEADER*/
-    .headerGrid{
-        background-color: rgb(31, 124, 185);
-        display: grid;
-        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
-        grid-template-columns: 0% 100% 0%;
-        grid-template-rows: 600px;
-    }
-    .headerUno{
-        height: 100%;
-        width: 100%;
-    }
-    .headerDos{
-        height: 40%;
-        width: 100%;
-        align-items: center;
-        justify-self: center;
-        padding-top: 310px;
-    }
-    .headerTres{
-        height: 100%;
-        width: 100%;
-    }
-    /*ESTILO FOOTER*/
-    .footerGrid{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 150px 100px 200px;
-        grid-template-areas:"redes"
-                            "derechos"
-                            "banner";
-        width: 100%;
-        align-items: flex-end;
-        background-color: rgb(31, 31, 31);
-        margin-top: 30px;
-    }
-    .redes{
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(to bottom,white, rgba(31, 31, 31));
-        grid-area: redes;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        color: rgb(31, 31, 31);
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-size: 25px;
-    }
-    .derechos{
-        height: 100%;
-        width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        font-size: 13px;
-        color: white;
-        text-align: left;  
-        grid-area: derechos;
-        background-color: rgb(31, 31, 31);
-    }
-    .banner{
-        width: 100%;
-        height: 100%;
-    }
-    .bannerImg{
-        width: 100%;
-        height: 100%;
-    }
-    /*GRID DEL HOME*/
-    .mainGridHome{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 280px 260px 260px 700px 500px;
-        grid-template-areas:"imgUno imgUno"
-                            "imgDos imgTres"
-                            "imgCuatro imgCuatro"
-                            "dolar dolar"
-                            "clima clima";
-                        
-    }
-    .imgUno{
-        width: 100%;
-        height: 80%;
-        grid-area: imgUno;
-        padding-top: 30px;
-        padding-left: 0%;
-        
-    }
-    .clima{
-        width: 100%;
-        height: 100%;
-        padding-top: 130px;
-        grid-area: clima;
-    }
-    .imgDos{
-        width: 100%;
-        height: 100%;
-        grid-area: imgDos;
-        padding-top: 0px;
-        padding-left: 0%;
-    }
-    .imgAerea{
-        height: 100%;
-        width: 100%; 
-    }
-    .imgCosechadora{
-        height: 90%;
-        width: 100%;
-    }
-    .imgTres{
-        width: 100%;
-        height: 100%;
-        grid-area: imgTres; 
-    }
-    .imgAgronomo{
-        height: 90%;
-        width: 100%;
-    }
-    .dolar{
-        height: 100%;
-        width: 100%;
-        grid-area: dolar;
-        padding-left: 12%;
-    }
-    .imgCuatro{
-        width: 100%;
-        height: 80%;
-        grid-area: imgCuatro;
-        padding-left: 0%;
-        
-    }
-    /*GRID CONTACTO*/   
-    #mainGridContactos{ 
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 300px 600px;
-        grid-template-areas: "main1 main2"
-                            "main3 main3";
-        border-top: black solid 2px;
-        border-bottom: black solid 2px;;                                          
-    }
-    /*CONTACTOS*/
-    #mainUnoContactos{
-        grid-area: main1;
-        height: 100%;
-        width: 100%;
-        padding-top: 60px;
-    }
-    /*CASILLA DE MENSAJE*/
-    #mainDosContactos{
-        height: 100%;
-        width: 100%;
-        grid-area: main2;
-        padding-top: 60px;
-        text-align: center;
-        border-left: black solid 2px;
-    }
-    .botonEnviar{
-        width: 15%;
-    }
-    /*GOOGLE MAPS*/
-    #mainTresContactos{
-        height: 100%;
-        width: 100%;
-        grid-area: main3;
-        padding-left: 15%;
-        padding-right: 15%;
-        
-    }
-    #titulosContacto{
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 100%;
-        padding-bottom: 30px;
-    }
-    #datosContacto{
-        font-family: 'M PLUS 2', sans-serif;
-        font-size: 30%;
-        text-align: left;
-        width: 80%;
-        display: inline;
-    }
-    #tamañoContacto{
-        font-size: 15px;
-    }
-    /*GRID DE NOSOTROS*/
-    #mainGridNosotros{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 350px 400px 350px;
-        border-top: black solid 2px;
-    }
-    /*IMAGEN AEREA*/
-    #mainUnoNosotros{
-        height: 80%;
-        width: 100%;
-        padding-left: 0%;
-        padding-top: 55px;
-    }
-    /*BREVE DESCRIPCION DE LA EMPRESA*/
-    #mainDosNosotros{
-        height: 100%;
-        width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 130%;
-        padding-top: 30px;
-        border-top: black solid 3px;
-        border-bottom: black solid 3px;;
-    }
-    /*IMAGEN YPF DIRECTO*/
-    #mainTresNosotros{
-        height: 80%;
-        width: 100%;
-        padding-left: 0%;
-        padding-top: 55px;
-    }
-    /*GRID DE PRODUCTOS*/
-    #mainGridProductos{
-        display: grid;
-        grid-template-columns: 33% 33% 33%;
-        grid-template-rows: 120px 50px 300px;
-        padding-left: 0%;
-        place-items: center;
-        grid-template-areas:"area1 area1 area1"
-                            "area2 area3 area4"
-                            "area5 area6 area7";
-        border-top: black solid 2px;                    
-    }   
-    /*TITULO PRODUCTOS*/
-    #mainUnoProductos{
-        height: 100%;
-        width: 100%;
-        grid-area: area1;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 250%;
-        padding-top: 60PX;
-    }
-    /*DISTINTOS PRODUCTOS*/
-    #mainDosProductos{
-        height: 100%;
-        width: 100%;
-        grid-area: area2 area3 area4;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        padding-top: 180px;
-        font-size: 15px;
-
-    }
-    /*IMAGENES PRODUCTOS*/
-    #mainTresProductos{
-        height: 45%;
-        width: 100%;
-        grid-area: area5 area6 area7 ;
-        border: solid 3px black;
-    }
-    /*GRID TRABAJA*/
-    #mainGridTrabaja{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 400px 400px; 
-        border-top: black solid 2px;
-        padding-left: 0%;
-    }
-    /*DEJAR CV*/
-    #mainUnoTrabaja{
-        height: 100%;
-        width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 160%;
-        padding-bottom: 30px;
-        padding-top: 5px;
-        place-items: center;
-    }
-    /*IMAGEN SURTIDOR*/
-    #mainDosTrabaja{
-        height: 100%;
-        width: 100%;
-        padding-left: 0%;
-    }
-}
-/* small */
-@media only screen and (min-width:600px){
-    /*ESTILO NAVEGADOR*/
-    nav{
-        background-color: rgb(233, 225, 213);
-        font-family: 'M PLUS 2', sans-serif;
-        width: 100%;
-        height: 60px;
-        text-align: center;  
-        border-top: 12px solid rgba(70, 236, 37, 0.616);
-        position: fixed;
-    }
-    /*ESTILO LISTA NAV*/
-    li{
-        color: black;
-        font-size: 19px;
-        width: 100%;
-        text-align: center;
-    }
-    /*ESTILO LISTA NAV*/
-    ul{
-        display: flex;
-        height: 100%;
-        justify-content: center;
-        align-items: center;
-        list-style-type: none;
-    }   
-    /*ESTILO HEADER*/
-    .headerGrid{
-        background-color: rgb(31, 124, 185);
-        display: grid;
-        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
-        grid-template-columns: 10% 80% 10%;
-        grid-template-rows: 400px;
-    }
-    .headerUno{
-        height: 100%;
-        width: 100%;
-    }
-    .headerDos{
-        height: 70%;
-        width: 100%;
-        align-items: center;
-        justify-self: center;
-        padding-top: 90px;
-    }
-    .headerTres{
-        height: 100%;
-        width: 100%;
-    }
-    /*ESTILO FOOTER*/
-    .footerGrid{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 150px 300px;
-        grid-template-areas:"redes redes"
-                            "derechos banner";
-        width: 100%;
-        align-items: flex-end;
-        background-color: rgb(31, 31, 31);
-        margin-top: 30px;
-    }
-    .redes{
-        height: 100%;
-        width: 100%;
-        background: linear-gradient(to bottom,white, rgba(31, 31, 31));
-        grid-area: redes;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        color: rgb(31, 31, 31);
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-size: 25px;
-    }
-    .derechos{
-        height: 100%;
-        width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        font-size: 13px;
-        color: white;
-        text-align: left;  
-        grid-area: derechos;
-        background-color: rgb(31, 31, 31);
-    }
-    .banner{
-        width: 100%;
-        height: 100%;
-    }
-    .bannerImg{
-        width: 100%;
-        height: 100%;
-    }
-    /*GRID DEL HOME*/
-    .mainGridHome{
-        display: grid;
-        grid-template-columns: 40% 40% 20%;
-        grid-template-rows: 500px 400px 400px;
-        grid-template-areas:"imgUno imgUno dolar"
-                            "imgDos imgTres clima"
-                            "imgCuatro imgCuatro imgCuatro";
-                        
-    }
-    .imgUno{
-        width: 90%;
-        height: 90%;
-        grid-area: imgUno;
-        padding-top: 30px;
-        padding-left: 5%;
-        
-    }
-    .clima{
-        width: 100%;
-        height: 100%;
+    header{
         padding-top: 350px;
-        grid-area: clima;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 700px;
+        width: 100%;
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
     }
-    .imgDos{
-        width: 90%;
-        height: 90%;
-        grid-area: imgDos;
-        padding-top: 13px;
-        padding-left: 10%;
+    .fotoHeader{
+        width: 100%;
+    }
+    /*ESTILO FOOTER*/
+    .redes{
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    .derechos{
+        height: 300px;
+        width: 100%;
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        align-items: flex-end;
+        color: white;
+    }
+    .logoRedes{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;    
+        padding-left:20%;   
+    }
+    /*MAIN HOME*/
+    main{
+        background: linear-gradient(to right,rgba(51, 51, 51, 0.5),rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 1500px;
+        
     }
     .imgAerea{
-        height: 100%;
-        width: 100%; 
-    }
-    .imgCosechadora{
-        height: 100%;
-        width: 90%;
-    }
-    .imgTres{
-        width: 90%;
-        height: 90%;
-        grid-area: imgTres;
-        padding-top: 13px;
-        
-    }
-    .imgAgronomo{
-        height: 100%;
-        width: 100%;
-    }
-    .dolar{
-        height: 100%;
-        width: 100%;
-        grid-area: dolar;
         padding-top: 30px;
-    }
-    .imgCuatro{
-        width: 72%;
-        height: 90%;
-        grid-area: imgCuatro;
-        padding-left: 4%;
-        
-    }
-    /*GRID CONTACTO*/   
-    #mainGridContactos{ 
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 300px 600px;
-        grid-template-areas: "main1 main2"
-                            "main3 main3";
-        border-top: black solid 2px;
-        border-bottom: black solid 2px;;                                          
-    }
-    /*CONTACTOS*/
-    #mainUnoContactos{
-        grid-area: main1;
-        height: 100%;
-        width: 100%;
-        padding-top: 60px;
-    }
-    /*CASILLA DE MENSAJE*/
-    #mainDosContactos{
-        height: 100%;
-        width: 100%;
-        grid-area: main2;
-        padding-top: 60px;
-        text-align: center;
-        border-left: black solid 2px;
-    }
-    .botonEnviar{
-        width: 15%;
-    }
-    /*GOOGLE MAPS*/
-    #mainTresContactos{
-        height: 100%;
-        width: 100%;
-        grid-area: main3;
-        padding-left: 15%;
-        padding-right: 15%;
-        
-    }
-    #titulosContacto{
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 160%;
         padding-bottom: 30px;
-    }
-    #datosContacto{
-        font-family: 'M PLUS 2', sans-serif;
-        font-size: 80%;
-        text-align: left;
+        height: 100%;
         width: 100%;
-        display: inline;
     }
-    /*GRID DE NOSOTROS*/
-    #mainGridNosotros{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 500px 330px 500px;
-        border-top: black solid 2px;
+    .carousel{
+        margin-left: 10%;
+        width: 85%;
+        padding-top: 50px;   
     }
-    /*IMAGEN AEREA*/
-    #mainUnoNosotros{
-        height: 80%;
-        width: 100%;
+    .video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 80px;
         padding-left: 0%;
-        padding-top: 55px;
-    }
-    /*BREVE DESCRIPCION DE LA EMPRESA*/
-    #mainDosNosotros{
-        height: 100%;
-        width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 150%;
-        border-top: black solid 3px;
-        border-bottom: black solid 3px;;
-    }
-    /*IMAGEN YPF DIRECTO*/
-    #mainTresNosotros{
-        height: 80%;
-        width: 100%;
-        padding-left: 0%;
-        padding-top: 55px;
-    }
-    /*GRID DE PRODUCTOS*/
-    #mainGridProductos{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 120px 50px 400px;
-        padding-left: 12%;
-        place-items: center;
-        grid-template-areas:"area1 area1 area1"
-                            "area2 area3 area4"
-                            "area5 area6 area7";
-        border-top: black solid 2px;                    
-    }   
-    /*TITULO PRODUCTOS*/
-    #mainUnoProductos{
-        height: 100%;
-        width: 100%;
-        grid-area: area1;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 250%;
-        padding-top: 60PX;
-    }
-    /*DISTINTOS PRODUCTOS*/
-    #mainDosProductos{
-        height: 100%;
-        width: 100%;
-        grid-area: area2 area3 area4;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        padding-top: 90px;
+        padding-right: 0%;
 
     }
-    /*IMAGENES PRODUCTOS*/
-    #mainTresProductos{
-        height: 60%;
-        width: 100%;
-        grid-area: area5 area6 area7 ;
-        border: solid 3px black;
+    .divisa{
+        height: 200px;
+        width: 80%;
+        padding-left: 20%;
     }
-    /*GRID TRABAJA*/
-    #mainGridTrabaja{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 250px 400px; 
-        border-top: black solid 2px;
-        padding-left: 0%;
-    }
-    /*DEJAR CV*/
-    #mainUnoTrabaja{
+    /*MAIN TRABAJA*/
+    .mainTrabaja{
         height: 100%;
         width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
+    }
+    .tituloTrabaja{
+        font-size: 80px;
         text-align: center;
-        font-size: 160%;
-        padding-bottom: 30px;
-        padding-top: 25px;
-        place-items: center;
-    }
-    /*IMAGEN SURTIDOR*/
-    #mainDosTrabaja{
-        height: 100%;
         width: 100%;
-        padding-left: 0%;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(20, 20, 20);
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }   
+    .introTrabaja{
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(20, 20, 20)
+    }
+    .tarjetas{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 10px;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        display: flex;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.466);
+    }
+    /*MAIN PRODUCTOS*/
+    .tarjetasProductos{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 20px;
+        padding-left: 25%;
+        width: 75%;
+
+    }
+    .formProductos{
+        background-color: rgba(255, 255, 255, 0.466);
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
+    }
+    /*MAIN NOSOTROS*/
+    .fotoNosotros{
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        width: 550px;
+    }
+    /*MAIN CONTACTOS*/
+    .mapa{
+        padding-top: 150px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
     }
 }
-/* tablet */
-@media only screen and (min-width:768px){
-    /*ESTILO NAVEGADOR*/
+@media only screen and (min-width:600px){
+         /*ESTILO NAVEGADOR*/
     nav{
-        background-color: rgb(233, 225, 213);
-        font-family: 'M PLUS 2', sans-serif;
+        background-color:  rgba(20, 20, 20, 0.75);
         width: 100%;
-        height: 60px;
+        height: 350px;
         text-align: center;  
-        border-top: 12px solid rgba(70, 236, 37, 0.616);
+        border-top: 12px solid rgba(70, 236, 37, 0.8);
         position: fixed;
+        font-family: 'Bebas Neue', cursive;;
+        display: flex;
     }
     /*ESTILO LISTA NAV*/
     li{
-        color: black;
-        font-size: 19px;
+        font-size: 140%;
         width: 100%;
         text-align: center;
     }
+    .textoNav{
+        color:rgb(255, 255, 255);
+        font-family: 'Bebas Neue', cursive;
+        text-decoration: none;
+    }    
     /*ESTILO LISTA NAV*/
     ul{
-        display: flex;
         height: 100%;
         justify-content: center;
         align-items: center;
         list-style-type: none;
+        flex-direction: column;
+        justify-content: space-evenly;
     }   
+    .logo{
+        height: 0%;
+        width: 0%;  
+    }
     /*ESTILO HEADER*/
-    .headerGrid{
-        background-color: rgb(31, 124, 185);
-        display: grid;
-        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
-        grid-template-columns: 10% 80% 10%;
-        grid-template-rows: 400px;
-    }
-    .headerUno{
-        height: 100%;
-        width: 100%;
-    }
-    .headerDos{
-        height: 70%;
-        width: 100%;
+    header{
+        padding-top: 350px;
+        display: flex;
         align-items: center;
-        justify-self: center;
-        padding-top: 90px;
+        justify-content: center;
+        height: 700px;
+        width: 100%;
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
     }
-    .headerTres{
-        height: 100%;
+    .fotoHeader{
         width: 100%;
     }
     /*ESTILO FOOTER*/
-    .footerGrid{
-        display: grid;
-        grid-template-columns: 30% 70%;
-        grid-template-rows: 150px 300px;
-        grid-template-areas:"redes redes"
-                            "derechos banner";
-        width: 100%;
-        align-items: flex-end;
-        background-color: rgb(31, 31, 31);
-        margin-top: 30px;
-    }
     .redes{
         height: 100%;
         width: 100%;
-        background: linear-gradient(to bottom,white, rgba(31, 31, 31));
-        grid-area: redes;
-        font-family: 'M PLUS 2', sans-serif;
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
+        font-family: 'Bebas Neue', cursive;
         text-align: center;
-        color: rgb(31, 31, 31);
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-size: 25px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
     .derechos{
-        height: 100%;
+        height: 300px;
         width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        font-size: 13px;
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        align-items: flex-end;
         color: white;
-        text-align: left;  
-        grid-area: derechos;
-        background-color: rgb(31, 31, 31);
     }
-    .banner{
-        width: 100%;
-        height: 100%;
+    .logoRedes{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;    
+        padding-left:20%;   
     }
-    .bannerImg{
-        width: 100%;
-        height: 100%;
-    }
-    /*GRID DEL HOME*/
-    .mainGridHome{
-        display: grid;
-        grid-template-columns: 35% 35% 30%;
-        grid-template-rows: 300px 300px 500px;
-        grid-template-areas:"imgUno imgUno dolar"
-                            "imgDos imgTres clima"
-                            "imgCuatro imgCuatro imgCuatro";
-                        
-    }
-    .imgUno{
-        width: 100%;
-        height: 80%;
-        grid-area: imgUno;
-        padding-top: 30px;
-        padding-left: 0%;
+    /*MAIN HOME*/
+    main{
+        background: linear-gradient(to right,rgba(51, 51, 51, 0.5),rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 1500px;
         
-    }
-    .clima{
-        width: 100%;
-        height: 100%;
-        padding-top: 510px;
-        grid-area: clima;
-    }
-    .imgDos{
-        width: 100%;
-        height: 80%;
-        grid-area: imgDos;
-        padding-top: 0px;
-        padding-left: 0%;
     }
     .imgAerea{
-        height: 100%;
-        width: 100%; 
-    }
-    .imgCosechadora{
-        height: 100%;
-        width: 90%;
-    }
-    .imgTres{
-        width: 100%;
-        height: 80%;
-        grid-area: imgTres;
-        padding-top: 0px;
-        
-    }
-    .imgAgronomo{
-        height: 100%;
-        width: 100%;
-    }
-    .dolar{
-        height: 100%;
-        width: 100%;
-        grid-area: dolar;
         padding-top: 30px;
-    }
-    .imgCuatro{
-        width: 70%;
-        height: 70%;
-        grid-area: imgCuatro;
-        padding-left: 0%;
-        
-    }
-    /*GRID CONTACTO*/   
-    #mainGridContactos{ 
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 300px 600px;
-        grid-template-areas: "main1 main2"
-                            "main3 main3";
-        border-top: black solid 2px;
-        border-bottom: black solid 2px;;                                          
-    }
-    /*CONTACTOS*/
-    #mainUnoContactos{
-        grid-area: main1;
-        height: 100%;
-        width: 100%;
-        padding-top: 60px;
-    }
-    /*CASILLA DE MENSAJE*/
-    #mainDosContactos{
-        height: 100%;
-        width: 100%;
-        grid-area: main2;
-        padding-top: 60px;
-        text-align: center;
-        border-left: black solid 2px;
-    }
-    .botonEnviar{
-        width: 15%;
-    }
-    /*GOOGLE MAPS*/
-    #mainTresContactos{
-        height: 100%;
-        width: 100%;
-        grid-area: main3;
-        padding-left: 15%;
-        padding-right: 15%;
-        
-    }
-    #titulosContacto{
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 160%;
         padding-bottom: 30px;
-    }
-    #datosContacto{
-        font-family: 'M PLUS 2', sans-serif;
-        font-size: 80%;
-        text-align: left;
+        height: 100%;
         width: 100%;
-        display: inline;
     }
-    /*GRID DE NOSOTROS*/
-    #mainGridNosotros{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 500px 330px 500px;
-        border-top: black solid 2px;
+    .carousel{
+        margin-left: 10%;
+        width: 85%;
+        padding-top: 50px;   
     }
-    /*IMAGEN AEREA*/
-    #mainUnoNosotros{
-        height: 80%;
-        width: 100%;
+    .video{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 80px;
         padding-left: 0%;
-        padding-top: 55px;
-    }
-    /*BREVE DESCRIPCION DE LA EMPRESA*/
-    #mainDosNosotros{
-        height: 100%;
-        width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 150%;
-        border-top: black solid 3px;
-        border-bottom: black solid 3px;;
-    }
-    /*IMAGEN YPF DIRECTO*/
-    #mainTresNosotros{
-        height: 80%;
-        width: 100%;
-        padding-left: 0%;
-        padding-top: 55px;
-    }
-    /*GRID DE PRODUCTOS*/
-    #mainGridProductos{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 120px 50px 400px;
-        padding-left: 12%;
-        place-items: center;
-        grid-template-areas:"area1 area1 area1"
-                            "area2 area3 area4"
-                            "area5 area6 area7";
-        border-top: black solid 2px;                    
-    }   
-    /*TITULO PRODUCTOS*/
-    #mainUnoProductos{
-        height: 100%;
-        width: 100%;
-        grid-area: area1;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 250%;
-        padding-top: 60PX;
-    }
-    /*DISTINTOS PRODUCTOS*/
-    #mainDosProductos{
-        height: 100%;
-        width: 100%;
-        grid-area: area2 area3 area4;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        padding-top: 90px;
+        padding-right: 0%;
 
     }
-    /*IMAGENES PRODUCTOS*/
-    #mainTresProductos{
-        height: 60%;
-        width: 100%;
-        grid-area: area5 area6 area7 ;
-        border: solid 3px black;
+    .divisa{
+        height: 200px;
+        width: 80%;
+        padding-left: 20%;
     }
-    /*GRID TRABAJA*/
-    #mainGridTrabaja{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 250px 400px; 
-        border-top: black solid 2px;
-        padding-left: 0%;
-    }
-    /*DEJAR CV*/
-    #mainUnoTrabaja{
+    /*MAIN TRABAJA*/
+    .mainTrabaja{
         height: 100%;
         width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
+    }
+    .tituloTrabaja{
+        font-size: 80px;
         text-align: center;
-        font-size: 160%;
-        padding-bottom: 30px;
-        padding-top: 25px;
-        place-items: center;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(20, 20, 20);
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }   
+    .introTrabaja{
+        font-size: 25px;
+        text-align: center;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(20, 20, 20)
     }
-    /*IMAGEN SURTIDOR*/
-    #mainDosTrabaja{
+    .tarjetas{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        font-size: 10px;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        display: flex;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.466);
+    }
+    /*MAIN PRODUCTOS*/
+    .tarjetasProductos{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 20px;
+        padding-left: 25%;
+        width: 75%;
+
+    }
+    .formProductos{
+        background-color: rgba(255, 255, 255, 0.466);
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
+    }
+    /*MAIN NOSOTROS*/
+    .fotoNosotros{
+        display: flex;
+        justify-content: center;
+        height: 350px;
+        width: 550px;
+    }
+    /*MAIN CONTACTOS*/
+    .mapa{
+        padding-top: 150px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+@media only screen and (min-width:768px){
+     /*ESTILO NAVEGADOR*/
+     nav{
+        background-color:  rgba(20, 20, 20, 0.75);
+        width: 100%;
+        height: 350px;
+        text-align: center;  
+        border-top: 12px solid rgba(70, 236, 37, 0.8);
+        position: fixed;
+        font-family: 'Bebas Neue', cursive;;
+        display: flex;
+    }
+    /*ESTILO LISTA NAV*/
+    li{
+        font-size: 140%;
+        width: 100%;
+        text-align: center;
+    }
+    .textoNav{
+        color:rgb(255, 255, 255);
+        font-family: 'Bebas Neue', cursive;
+        text-decoration: none;
+    }    
+    /*ESTILO LISTA NAV*/
+    ul{
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }   
+    .logo{
+        height: 0%;
+        width: 0%;  
+    }
+    /*ESTILO HEADER*/
+    header{
+        padding-top: 350px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 900px;
+        width: 100%;
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
+    }
+    .fotoHeader{
+        width: 100%;
+    }
+    /*ESTILO FOOTER*/
+    .redes{
         height: 100%;
         width: 100%;
-        padding-left: 0%;
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
+        font-family: 'Bebas Neue', cursive;
+        text-align: center;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
-}    
-/*pc*/    
+    .derechos{
+        height: 300px;
+        width: 100%;
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        align-items: flex-end;
+        color: white;
+    }
+    .logoRedes{
+        width: 80%;
+        display: flex;
+        justify-content: space-between;    
+        padding-left:20%;   
+    }
+    /*MAIN HOME*/
+    main{
+        background: linear-gradient(to right,rgba(51, 51, 51, 0.5),rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 1500px;
+        
+    }
+    .imgAerea{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 100%;
+        width: 100%;
+    }
+    .carousel{
+        margin-left: 10%;
+        width: 85%;
+        padding-top: 50px;   
+    }
+    .video{
+        display: flex;
+        flex-direction:row;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 80px;
+        padding-left: 0%;
+        padding-right: 0%;
+
+    }
+    .divisa{
+        height: 300px;
+        width: 80%;
+        padding-left: 30%;
+    }
+    /*MAIN TRABAJA*/
+    .mainTrabaja{
+        height: 100%;
+        width: 100%;
+    }
+    .tituloTrabaja{
+        font-size: 100px;
+        text-align: center;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(20, 20, 20);
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }   
+    .introTrabaja{
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(20, 20, 20)
+    }
+    .tarjetas{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .form{
+        width: 100%;
+        display: flex;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.466);
+    }
+    /*MAIN PRODUCTOS*/
+    .tarjetasProductos{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 20px;
+        padding-left: 25%;
+        width: 75%;
+
+    }
+    .formProductos{
+        background-color: rgba(255, 255, 255, 0.466);
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
+    }
+    /*MAIN NOSOTROS*/
+    .fotoNosotros{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    /*MAIN CONTACTOS*/
+    .mapa{
+        padding-top: 150px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
 @media only screen and (min-width:992px){
         /*ESTILO NAVEGADOR*/
     nav{
-        background-color: white;
-        font-family: 'M PLUS 2', sans-serif;
+        background-color:  rgba(20, 20, 20, 0.75);
         width: 100%;
-        height: 145px;
+        height: 100px;
         text-align: center;  
-        border-top: 12px solid rgba(70, 236, 37, 0.616);
-        position: absolute;
+        border-top: 12px solid rgba(70, 236, 37, 0.8);
+        position: fixed;
+        font-family: 'Bebas Neue', cursive;;
+        display: flex;
     }
     /*ESTILO LISTA NAV*/
     li{
-        color: black;
-        font-size: 120%;
+        font-size: 140%;
         width: 100%;
         text-align: center;
     }
+    .textoNav{
+        color:rgb(255, 255, 255);
+        font-family: 'Bebas Neue', cursive;
+        text-decoration: none;
+    }    
     /*ESTILO LISTA NAV*/
     ul{
         display: flex;
+        flex-direction: row;
+        width: 100%;
         height: 100%;
         justify-content: center;
         align-items: center;
         list-style-type: none;
     }   
     .logo{
-        height: 80%;
-        width: 80%;
+        height: 100%;
+        width: 10%;
+        display: flex;
+        align-items: flex-start;
+        
     }
     /*ESTILO HEADER*/
-    .headerGrid{
-        background-color: rgb(31, 124, 185);
-        display: grid;
-        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
-        grid-template-columns: 25% 50% 25%;
-        grid-template-rows: 600px;
-    }
-    .headerUno{
-        height: 100%;
-        width: 100%;
-    }
-    .headerDos{
-        height: 90%;
-        width: 100%;
+    header{
+        padding-top: 80px;
+        display: flex;
         align-items: center;
-        justify-self: center;
-        padding-top: 200px;
-    }
-    .headerTres{
-        height: 100%;
+        justify-content: center;
+        height: 500px;
         width: 100%;
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
+    }
+    .fotoHeader{
+        height: 75%;
+        width: 46%;
     }
     /*ESTILO FOOTER*/
-    .footerGrid{
-        display: grid;
-        grid-template-columns: 45% 55%;
-        grid-template-rows: 150px 300px;
-        grid-template-areas:"redes redes"
-                            "derechos banner";
-        width: 100%;
-        align-items: flex-end;
-        background-color: rgb(31, 31, 31);
-        margin-top: 30px;
-    }
     .redes{
         height: 100%;
         width: 100%;
-        background: linear-gradient(to bottom,white, rgba(31, 31, 31));
-        grid-area: redes;
-        font-family: 'M PLUS 2', sans-serif;
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
+        font-family: 'Bebas Neue', cursive;
         text-align: center;
-        color: rgb(31, 31, 31);
-        padding-top: 0px;
-        padding-bottom: 0px;
-        font-size: 25px;
+        color: rgb(0, 0, 0);
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
     }
     .derechos{
-        height: 100%;
+        height: 300px;
         width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        font-size: 13px;
+        background-color: rgb(20, 20, 20);
+        display: flex;
+        align-items: flex-end;
         color: white;
-        text-align: left;  
-        grid-area: derechos;
-        background-color: rgb(31, 31, 31);
     }
-    .banner{
-        width: 100%;
-        height: 100%;
+    .logoRedes{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;    
+        padding-left: 40%;   
     }
-    .bannerImg{
-        width: 100%;
-        height: 100%;
-    }
-    /*GRID DEL HOME*/
-    .mainGridHome{
-        display: grid;
-        grid-template-columns: 40% 40% 20%;
-        grid-template-rows: 500px 650px 400px;
-        grid-template-areas:"imgUno imgUno dolar"
-                            "imgDos imgTres clima"
-                            "imgCuatro imgCuatro imgCuatro";
-                        
-    }
-    .imgUno{
-        width: 90%;
-        height: 90%;
-        grid-area: imgUno;
-        padding-top: 30px;
-        padding-left: 5%;
+    /*MAIN HOME*/
+    main{
+        background: linear-gradient(to right,rgba(51, 51, 51, 0.5),rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        height: 1500px;
         
-    }
-    .clima{
-        width: 100%;
-        height: 100%;
-        padding-top: 380px;
-        grid-area: clima;
-        align-items: center;
-    }
-    .imgDos{
-        width: 90%;
-        height: 90%;
-        grid-area: imgDos;
-        padding-top: 0px;
-        margin-left: 50%;
     }
     .imgAerea{
-        height: 100%;
-        width: 100%; 
-    }
-    .imgCosechadora{
-        height: 100%;
-        width: 90%;
-    }
-    .imgTres{
-        width: 90%;
-        height: 90%;
-        grid-area: imgTres;
-        padding-top: 13px;
-        
-    }
-    .imgAgronomo{
-        height: 100%;
-        width: 100%;
-    }
-    .dolar{
-        height: 100%;
-        width: 100%;
-        grid-area: dolar;
         padding-top: 30px;
-        align-items: center;
-    }
-    .imgCuatro{
-        width: 72%;
-        height: 90%;
-        grid-area: imgCuatro;
-        padding-left: 4%;
-        margin-top: 50px;
-        
-    }
-    /*GRID CONTACTO*/   
-    /*GRID CONTACTOS*/
-    #mainGridContactos{ 
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-template-rows: 300px 600px;
-        grid-template-areas: "main1 main2"
-                            "main3 main3";
-        border-top: black solid 2px;
-        border-bottom: black solid 2px;;                                          
-    }
-    /*CONTACTOS*/
-    #mainUnoContactos{
-        grid-area: main1;
-        height: 100%;
-        width: 100%;
-        padding-top: 60px;
-    }
-    /*CASILLA DE MENSAJE*/
-    #mainDosContactos{
-        height: 100%;
-        width: 100%;
-        grid-area: main2;
-        padding-top: 60px;
-        text-align: center;
-        border-left: black solid 2px;
-    }
-    .botonEnviar{
-        width: 15%;
-    }
-    /*GOOGLE MAPS*/
-    #mainTresContactos{
-        height: 100%;
-        width: 100%;
-        grid-area: main3;
-        padding-left: 15%;
-        padding-right: 15%;
-        
-    }
-    #titulosContacto{
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 160%;
         padding-bottom: 30px;
-    }
-    #datosContacto{
-        font-family: 'M PLUS 2', sans-serif;
-        font-size: 80%;
-        text-align: left;
-        width: 100%;
-        display: inline;
-    }
-    /*GRID DE NOSOTROS*/
-    #mainGridNosotros{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-rows: 500px 210px 500px;
-        border-top: black solid 2px;
-    }
-    /*IMAGEN AEREA*/
-    #mainUnoNosotros{
-        height: 80%;
-        width: 55%;
-        padding-left: 22%;
-        padding-top: 55px;
-    }
-    /*BREVE DESCRIPCION DE LA EMPRESA*/
-    #mainDosNosotros{
         height: 100%;
         width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
+    }
+    .carousel{
+        margin-left: 10%;
+        width: 85%;
+        padding-top: 50px;   
+    }
+    .video{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 130px;
+        padding-left: 18%;
+        padding-right: 18%;
+    }
+    .divisa{
+        height: 730px;
+        width: 80%;
+        padding-left: 10%;
+    }
+    /*MAIN TRABAJA*/
+    .mainTrabaja{
+        height: 100%;
+        width: 100%;
+    }
+    .tituloTrabaja{
+        font-size: 100px;
         text-align: center;
-        font-size: 150%;
-        border-top: black solid 3px;
-        border-bottom: black solid 3px;;
-    }
-    /*IMAGEN YPF DIRECTO*/
-    #mainTresNosotros{
-        height: 80%;
-        width: 55%;
-        padding-left: 22%;
-        padding-top: 55px;
-    }
-    /*GRID DE PRODUCTOS*/
-    #mainGridProductos{
-        display: grid;
-        grid-template-columns: 30% 30% 30%;
-        grid-template-rows: 120px 50px 400px;
-        padding-left: 12%;
-        place-items: center;
-        grid-template-areas:"area1 area1 area1"
-                            "area2 area3 area4"
-                            "area5 area6 area7";
-        border-top: black solid 2px;                    
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(20, 20, 20);
+        background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }   
-    /*TITULO PRODUCTOS*/
-    #mainUnoProductos{
-        height: 100%;
-        width: 100%;
-        grid-area: area1;
-        font-family: 'M PLUS 2', sans-serif;
+    .introTrabaja{
+        font-size: 40px;
         text-align: center;
-        font-size: 250%;
-        padding-top: 60PX;
+        width: 100%;
+        font-family: 'Bebas Neue', cursive;
+        color: rgb(20, 20, 20)
     }
-    /*DISTINTOS PRODUCTOS*/
-    #mainDosProductos{
-        height: 100%;
+    .tarjetas{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 20px;
         width: 100%;
-        grid-area: area2 area3 area4;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        padding-top: 90px;
+    }
+    .form{
+        width: 100%;
+        display: flex;
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
+        background-color: rgba(255, 255, 255, 0.466);
+    }
+    /*MAIN PRODUCTOS*/
+    .tarjetasProductos{
+        display: flex;
+        justify-content: space-between;
+        font-family: 'Bebas Neue', cursive;
+        padding-top: 20px;
+        padding-left: 25%;
+        width: 75%;
 
     }
-    /*IMAGENES PRODUCTOS*/
-    #mainTresProductos{
-        height: 60%;
-        width: 60%;
-        grid-area: area5 area6 area7 ;
-        border: solid 3px black;
+    .formProductos{
+        background-color: rgba(255, 255, 255, 0.466);
+        padding-left: 20%;
+        padding-right: 20%;
+        padding-bottom: 20px;
     }
-    /*GRID TRABAJA*/
-    #mainGridTrabaja{
-        display: grid;
-        grid-template-columns: 80%;
-        grid-template-rows: 200px 500px; 
-        padding-left: 15%;
-        border-top: black solid 2px;
-    }
-    /*DEJAR CV*/
-    #mainUnoTrabaja{
-        height: 100%;
+    /*MAIN NOSOTROS*/
+    .fotoNosotros{
+        display: flex;
+        justify-content: center;
         width: 100%;
-        font-family: 'M PLUS 2', sans-serif;
-        text-align: center;
-        font-size: 160%;
-        padding-bottom: 30px;
-        padding-top: 25px;
-        place-items: center;
     }
-    /*IMAGEN SURTIDOR*/
-    #mainDosTrabaja{
-        height: 85%;
-        width: 65%;
-        padding-left: 17%;
-    }
-}
+    /*MAIN CONTACTOS*/
+    .mapa{
+        padding-top: 150px;
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }    
+}   
