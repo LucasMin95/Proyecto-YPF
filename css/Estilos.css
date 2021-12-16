@@ -183,7 +183,7 @@ main{
         height: 350px;
         text-align: center;  
         border-top: 12px solid rgba(70, 236, 37, 0.8);
-        position: fixed;
+        position:absolute;
         font-family: 'Bebas Neue', cursive;;
         display: flex;
     }
@@ -367,7 +367,7 @@ main{
         height: 350px;
         text-align: center;  
         border-top: 12px solid rgba(70, 236, 37, 0.8);
-        position: fixed;
+        position: absolute;
         font-family: 'Bebas Neue', cursive;;
         display: flex;
     }
@@ -551,7 +551,7 @@ main{
         height: 350px;
         text-align: center;  
         border-top: 12px solid rgba(70, 236, 37, 0.8);
-        position: fixed;
+        position: absolute;
         font-family: 'Bebas Neue', cursive;;
         display: flex;
     }
