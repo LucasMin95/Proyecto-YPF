@@ -10,7 +10,7 @@ nav{
     height: 100px;
     text-align: center;  
     border-top: 12px solid rgba(70, 236, 37, 0.8);
-    position: fixed;
+    position: absolute;
     font-family: 'Bebas Neue', cursive;;
     display: flex;
 }
@@ -180,7 +180,7 @@ main{
     nav{
         background-color:  rgba(20, 20, 20, 0.75);
         width: 100%;
-        height: 350px;
+        height: 180px;
         text-align: center;  
         border-top: 12px solid rgba(70, 236, 37, 0.8);
         position:absolute;
@@ -213,11 +213,11 @@ main{
     }
     /*ESTILO HEADER*/
     header{
-        padding-top: 350px;
+        padding-top: 160px;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 700px;
+        height: 500px;
         width: 100%;
         background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
     }
@@ -236,19 +236,46 @@ main{
         padding-bottom: 20px;
         padding-top: 20px;
     }
-    .derechos{
-        height: 300px;
+    .footer{
+        font-family: 'Bebas Neue', cursive;
+        height: 1300px;
         width: 100%;
         background-color: rgb(20, 20, 20);
         display: flex;
-        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
         color: white;
+        justify-content: space-between;
+    }
+    .footerLogo{
+        padding-bottom: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .navFooter{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        padding-bottom: 80px;
+        color: rgba(255, 255, 255, 0.445);
     }
     .logoRedes{
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-between;    
-        padding-left:20%;   
+        padding-left: 8%;   
+    }
+    .derechos{
+        height: 100px;
+        background-color: rgb(20, 20, 20);
+        font-size: 12px;
+        font: 'Bebas Neue', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        color:rgba(255, 255, 255, 0.445);
     }
     /*MAIN HOME*/
     main{
@@ -350,9 +377,8 @@ main{
     }
     /*MAIN CONTACTOS*/
     .mapa{
-        padding-top: 150px;
+        padding-top: 200px;
         width: 100%;
-        height: 130px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -364,7 +390,7 @@ main{
     nav{
         background-color:  rgba(20, 20, 20, 0.75);
         width: 100%;
-        height: 350px;
+        height: 180px;
         text-align: center;  
         border-top: 12px solid rgba(70, 236, 37, 0.8);
         position: absolute;
@@ -397,11 +423,11 @@ main{
     }
     /*ESTILO HEADER*/
     header{
-        padding-top: 350px;
+        padding-top: 170px;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 700px;
+        height: 550px;
         width: 100%;
         background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
     }
@@ -411,7 +437,7 @@ main{
     .imgNosotros{
         width: 100%;
     }
-    /*ESTILO FOOTER*/
+     /*ESTILO FOOTER*/
     .redes{
         height: 100%;
         width: 100%;
@@ -423,19 +449,46 @@ main{
         padding-bottom: 20px;
         padding-top: 20px;
     }
-    .derechos{
-        height: 300px;
+    .footer{
+        font-family: 'Bebas Neue', cursive;
+        height: 1300px;
         width: 100%;
         background-color: rgb(20, 20, 20);
         display: flex;
-        align-items: flex-end;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 20px;
         color: white;
+        justify-content: space-between;
+    }
+    .footerLogo{
+        padding-bottom: 0px;
+        width: 100%;
+        height: 100%;
+    }
+    .navFooter{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        padding-bottom: 80px;
+        color: rgba(255, 255, 255, 0.445);
     }
     .logoRedes{
-        width: 80%;
+        width: 90%;
         display: flex;
         justify-content: space-between;    
-        padding-left:20%;   
+        padding-left: 8%;   
+    }
+    .derechos{
+        height: 100px;
+        background-color: rgb(20, 20, 20);
+        font-size: 12px;
+        font: 'Bebas Neue', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        color:rgba(255, 255, 255, 0.445);
     }
     /*MAIN HOME*/
     main{
@@ -534,9 +587,9 @@ main{
     }
     /*MAIN CONTACTOS*/
     .mapa{
-        padding-top: 150px;
+        padding-top: 180px;
         width: 100%;
-        height: 300px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -548,7 +601,7 @@ main{
      nav{
         background-color:  rgba(20, 20, 20, 0.75);
         width: 100%;
-        height: 350px;
+        height: 180px;
         text-align: center;  
         border-top: 12px solid rgba(70, 236, 37, 0.8);
         position: absolute;
@@ -581,11 +634,11 @@ main{
     }
     /*ESTILO HEADER*/
     header{
-        padding-top: 350px;
+        padding-top: 170px;
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 900px;
+        height: 600px;
         width: 100%;
         background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
     }
@@ -595,8 +648,8 @@ main{
     .imgNosotros{
         width: 100%;
     }
-    /*ESTILO FOOTER*/
-    .redes{
+     /*ESTILO FOOTER*/
+     .redes{
         height: 100%;
         width: 100%;
         background: linear-gradient(to right,rgb(31, 124, 185), rgba(70, 236, 37, 0.616));
@@ -607,19 +660,41 @@ main{
         padding-bottom: 20px;
         padding-top: 20px;
     }
-    .derechos{
+    .footer{
+        font-family: 'Bebas Neue', cursive;
         height: 300px;
         width: 100%;
         background-color: rgb(20, 20, 20);
         display: flex;
-        align-items: flex-end;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 60px;
         color: white;
     }
+    .footerLogo{
+        width: 30%;
+    }
+    .navFooter{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        color: rgba(255, 255, 255, 0.445);
+    }
     .logoRedes{
-        width: 80%;
+        width: 60%;
         display: flex;
         justify-content: space-between;    
-        padding-left:20%;   
+        padding-left: 40%;   
+    }
+    .derechos{
+        background-color: rgb(20, 20, 20);
+        font: 'Bebas Neue', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        color:rgba(255, 255, 255, 0.445);
     }
     /*MAIN HOME*/
     main{
@@ -794,19 +869,42 @@ main{
         padding-bottom: 20px;
         padding-top: 20px;
     }
-    .derechos{
-        height: 300px;
+    .footer{
+        font-family: 'Bebas Neue', cursive;
+        height: 400px;
         width: 100%;
         background-color: rgb(20, 20, 20);
         display: flex;
-        align-items: flex-end;
+        justify-content: space-between;
+        padding-top: 60px;
+        padding-left: 15%;
+        padding-right: 15%;
         color: white;
+    }
+    .footerLogo{
+        width: 20%;
+        padding-bottom: 210px;
+    }
+    .navFooter{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        padding-right: 10%;
+        color: rgba(255, 255, 255, 0.445);
     }
     .logoRedes{
         width: 60%;
         display: flex;
         justify-content: space-between;    
         padding-left: 40%;   
+    }
+    .derechos{
+        background-color: rgb(20, 20, 20);
+        font: 'Bebas Neue', cursive;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        color:rgba(255, 255, 255, 0.445);
     }
     /*MAIN HOME*/
     main{
@@ -833,8 +931,8 @@ main{
         align-items: center;
         justify-content: space-between;
         padding-top: 130px;
-        padding-left: 18%;
-        padding-right: 18%;
+        padding-left: 25%;
+        padding-right: 25%;
     }
     .divisa{
         height: 730px;
