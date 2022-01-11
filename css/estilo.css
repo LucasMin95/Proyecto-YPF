@@ -12,14 +12,15 @@
     border-top: 12px solid rgba(70, 236, 37, 0.8);
     position: absolute;
     font-family: 'Bebas Neue', cursive;
-    display: flex; }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px; }
     nav ul {
       height: 100%;
-      justify-content: center;
-      align-items: center;
       list-style-type: none;
       flex-direction: column;
-      justify-content: space-evenly; }
+      display: flex; }
       nav ul li {
         font-size: 140%;
         width: 100%;
@@ -28,9 +29,9 @@
         color: white;
         font-family: 'Bebas Neue', cursive;
         text-decoration: none; }
-      nav ul .logo {
-        height: 100%;
-        width: 100%; }
+    nav .logo {
+      height: 0%;
+      width: 0%; }
   /*ESTILO HEADER*/
   header {
     padding-top: 160px;
@@ -60,7 +61,7 @@
       padding-left: 8%; }
   .footer {
     font-family: 'Bebas Neue', cursive;
-    height: 1300px;
+    height: 1000px;
     width: 100%;
     background-color: #141414;
     display: flex;
@@ -68,27 +69,28 @@
     justify-content: center;
     padding-top: 20px;
     color: white;
-    justify-content: space-between; }
-    .footer .footerLogo {
-      padding-bottom: 0px;
-      width: 100%;
-      height: 100%; }
+    justify-content: space-between;
+    align-items: center; }
     .footer .navFooter {
-      font-size: 10px;
+      font-size: 13px;
       display: flex;
       flex-direction: column;
-      padding-right: 10%;
-      padding-bottom: 80px;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
       color: rgba(255, 255, 255, 0.445); }
-    .footer .derechos {
-      height: 100px;
-      background-color: #141414;
-      font-size: 12px;
-      font: 'Bebas Neue', cursive;
-      display: flex;
-      flex-direction: row;
-      justify-content: right;
-      color: rgba(255, 255, 255, 0.445); }
+  .derechos {
+    height: 100px;
+    background-color: #141414;
+    font-size: 12px;
+    font: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: rgba(255, 255, 255, 0.445); }
+  .footerLogo {
+    width: 70%;
+    height: 70%; }
   /*MAIN HOME*/
   main {
     background: linear-gradient(to right, rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
@@ -121,33 +123,47 @@
   .mainTrabaja {
     height: 100%;
     width: 100%; }
-    .mainTrabaja .tituloTrabaja {
-      font-size: 80px;
-      text-align: center;
-      width: 100%;
-      font-family: 'Bebas Neue', cursive;
-      color: #141414; }
-    .mainTrabaja .introTrabaja {
-      font-size: 25px;
-      text-align: center;
-      width: 100%;
-      font-family: 'Bebas Neue', cursive;
-      color: #141414; }
-    .mainTrabaja .tarjetas, .mainTrabaja .tarjetasProductos {
-      display: flex;
-      justify-content: space-between;
-      font-family: 'Bebas Neue', cursive;
-      font-size: 10px;
-      padding-top: 20px;
-      width: 100%; }
-    .mainTrabaja .form, .mainTrabaja .formProductos {
-      width: 100%;
-      display: flex;
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-bottom: 20px;
-      background-color: rgba(255, 255, 255, 0.466); }
+  .tituloTrabaja {
+    font-size: 60px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414;
+    background: linear-gradient(to right, #1f7cb9, #46ec25);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .introTrabaja {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414; }
+  .tarjetas {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 20px;
+    width: 100%; }
+  .form {
+    width: 100%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.466); }
   /*MAIN PRODUCTOS*/
+  .tarjetasProductos {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 10px;
+    padding-top: 20px;
+    width: 100%; }
+  .formProductos {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.466); }
   /*MAIN NOSOTROS*/
   .fotoNosotros {
     width: 100%;
@@ -155,6 +171,11 @@
     justify-content: center; }
   .imgNosotros {
     width: 80%; }
+  .nosotros {
+    font-size: 30px;
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.466);
+    font-family: 'Bebas Neue', cursive; }
   /*MAIN CONTACTOS*/
   .mapa {
     padding-top: 200px;
@@ -176,11 +197,11 @@
     display: flex; }
     nav ul {
       height: 100%;
-      justify-content: center;
-      align-items: center;
       list-style-type: none;
       flex-direction: column;
-      justify-content: space-evenly; }
+      display: flex;
+      justify-content: center;
+      align-items: center; }
       nav ul li {
         font-size: 140%;
         width: 100%;
@@ -189,9 +210,9 @@
         color: white;
         font-family: 'Bebas Neue', cursive;
         text-decoration: none; }
-      nav ul .logo {
-        height: 100%;
-        width: 100%; }
+    nav .logo {
+      height: 00%;
+      width: 00%; }
   /*ESTILO HEADER*/
   header {
     padding-top: 160px;
@@ -221,7 +242,7 @@
       padding-left: 8%; }
   .footer {
     font-family: 'Bebas Neue', cursive;
-    height: 1300px;
+    height: 1000px;
     width: 100%;
     background-color: #141414;
     display: flex;
@@ -230,26 +251,30 @@
     padding-top: 20px;
     color: white;
     justify-content: space-between; }
-    .footer .footerLogo {
-      padding-bottom: 0px;
-      width: 100%;
-      height: 100%; }
     .footer .navFooter {
-      font-size: 10px;
+      font-size: 13px;
       display: flex;
       flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding-right: 10%;
-      padding-bottom: 80px;
+      padding-bottom: 20px;
       color: rgba(255, 255, 255, 0.445); }
-    .footer .derechos {
-      height: 100px;
-      background-color: #141414;
-      font-size: 12px;
-      font: 'Bebas Neue', cursive;
-      display: flex;
-      flex-direction: row;
-      justify-content: right;
-      color: rgba(255, 255, 255, 0.445); }
+  .derechos {
+    height: 100px;
+    background-color: #141414;
+    font-size: 12px;
+    font: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: rgba(255, 255, 255, 0.445); }
+  .footerLogo {
+    width: 70%;
+    height: 70%;
+    padding-left: 25%;
+    padding-top: 0px;
+    padding-bottom: 0px; }
   /*MAIN HOME*/
   main {
     background: linear-gradient(to right, rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
@@ -282,32 +307,33 @@
   .mainTrabaja {
     height: 100%;
     width: 100%; }
-    .mainTrabaja .tituloTrabaja {
-      font-size: 80px;
-      text-align: center;
-      width: 100%;
-      font-family: 'Bebas Neue', cursive;
-      color: #141414; }
-    .mainTrabaja .introTrabaja {
-      font-size: 25px;
-      text-align: center;
-      width: 100%;
-      font-family: 'Bebas Neue', cursive;
-      color: #141414; }
-    .mainTrabaja .tarjetas, .mainTrabaja .tarjetasProductos {
-      display: flex;
-      justify-content: space-between;
-      font-family: 'Bebas Neue', cursive;
-      font-size: 10px;
-      padding-top: 20px;
-      width: 100%; }
-    .mainTrabaja .form, .mainTrabaja .formProductos {
-      width: 100%;
-      display: flex;
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-bottom: 20px;
-      background-color: rgba(255, 255, 255, 0.466); }
+  .tituloTrabaja {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414;
+    background: linear-gradient(to right, #1f7cb9, #46ec25);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .introTrabaja {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414; }
+  .tarjetas {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 20px;
+    width: 80%; }
+  .form {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.466); }
   /*MAIN PRODUCTOS*/
   .tarjetasProductos {
     display: flex;
@@ -328,6 +354,11 @@
     justify-content: center; }
   .imgNosotros {
     width: 80%; }
+  .nosotros {
+    font-size: 30px;
+    margin-top: 60px;
+    background-color: rgba(255, 255, 255, 0.466);
+    font-family: 'Bebas Neue', cursive; }
   /*MAIN CONTACTOS*/
   .mapa {
     padding-top: 200px;
@@ -344,9 +375,9 @@
     height: 180px;
     text-align: center;
     border-top: 12px solid rgba(70, 236, 37, 0.8);
-    position: absolute;
     font-family: 'Bebas Neue', cursive;
-    display: flex; }
+    display: flex;
+    flex-direction: column; }
     nav ul {
       height: 100%;
       justify-content: center;
@@ -362,9 +393,9 @@
         color: white;
         font-family: 'Bebas Neue', cursive;
         text-decoration: none; }
-      nav ul .logo {
-        height: 0%;
-        width: 0%; }
+    nav .logo {
+      height: 0%;
+      width: 0%; }
   /*ESTILO HEADER*/
   header {
     padding-top: 170px;
@@ -390,11 +421,11 @@
     font-size: 30px;
     padding-bottom: 20px;
     padding-top: 20px; }
-    .redes .logoRedes {
-      width: 60%;
-      display: flex;
-      justify-content: space-between;
-      padding-left: 40%; }
+  .logoRedes {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40%; }
   .footer {
     font-family: 'Bebas Neue', cursive;
     height: 300px;
@@ -406,21 +437,21 @@
     align-items: flex-start;
     padding-top: 60px;
     color: white; }
-    .footer .footerLogo {
-      width: 30%; }
-    .footer .navFooter {
-      font-size: 10px;
-      display: flex;
-      flex-direction: column;
-      padding-right: 10%;
-      color: rgba(255, 255, 255, 0.445); }
-    .footer .derechos {
-      background-color: #141414;
-      font: 'Bebas Neue', cursive;
-      display: flex;
-      flex-direction: row;
-      justify-content: right;
-      color: rgba(255, 255, 255, 0.445); }
+  .navFooter {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    color: rgba(255, 255, 255, 0.445); }
+  .derechos {
+    background-color: #141414;
+    font: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: rgba(255, 255, 255, 0.445); }
+  .footerLogo {
+    padding-left: 0; }
   /*MAIN HOME*/
   main {
     background: linear-gradient(to right, rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
@@ -453,31 +484,34 @@
   .mainTrabaja {
     height: 100%;
     width: 100%; }
-    .mainTrabaja .tituloTrabaja {
-      font-size: 100px;
-      text-align: center;
-      width: 100%;
-      font-family: 'Bebas Neue', cursive;
-      color: #141414; }
-    .mainTrabaja .introTrabaja {
-      font-size: 40px;
-      text-align: center;
-      width: 100%;
-      font-family: 'Bebas Neue', cursive;
-      color: #141414; }
-    .mainTrabaja .tarjetas, .mainTrabaja .tarjetasProductos {
-      display: flex;
-      justify-content: space-between;
-      font-family: 'Bebas Neue', cursive;
-      padding-top: 20px;
-      width: 100%; }
-    .mainTrabaja .form, .mainTrabaja .formProductos {
-      width: 100%;
-      display: flex;
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-bottom: 20px;
-      background-color: rgba(255, 255, 255, 0.466); }
+  .tituloTrabaja {
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414;
+    background: linear-gradient(to right, #1f7cb9, #46ec25);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .introTrabaja {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414; }
+  .tarjetas {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 20px;
+    width: 100%; }
+  .form {
+    width: 100%;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.466); }
   /*MAIN PRODUCTOS*/
   .tarjetasProductos {
     display: flex;
@@ -554,6 +588,9 @@
       height: 75%;
       width: 46%; }
   /*ESTILO FOOTER*/
+  .footerLogo {
+    width: 100%;
+    height: 100%; }
   .redes {
     height: 100%;
     width: 100%;
@@ -580,22 +617,19 @@
     padding-left: 15%;
     padding-right: 15%;
     color: white; }
-    .footer .footerLogo {
-      width: 20%;
-      padding-bottom: 210px; }
     .footer .navFooter {
-      font-size: 10px;
+      font-size: 20px;
       display: flex;
       flex-direction: column;
       padding-right: 10%;
       color: rgba(255, 255, 255, 0.445); }
-    .footer .derechos {
-      background-color: #141414;
-      font: 'Bebas Neue', cursive;
-      display: flex;
-      flex-direction: row;
-      justify-content: right;
-      color: rgba(255, 255, 255, 0.445); }
+  .derechos {
+    background-color: #141414;
+    font: 'Bebas Neue', cursive;
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    color: rgba(255, 255, 255, 0.445); }
   /*MAIN HOME*/
   main {
     background: linear-gradient(to right, rgba(51, 51, 51, 0.5), rgba(51, 51, 51, 0.5)), url(../img/aerea1.jpg);
@@ -627,31 +661,35 @@
   .mainTrabaja {
     height: 100%;
     width: 100%; }
-    .mainTrabaja .tituloTrabaja {
-      font-size: 100px;
-      text-align: center;
-      width: 100%;
-      font-family: 'Bebas Neue', cursive;
-      color: #141414; }
-    .mainTrabaja .introTrabaja {
-      font-size: 40px;
-      text-align: center;
-      width: 100%;
-      font-family: 'Bebas Neue', cursive;
-      color: #141414; }
-    .mainTrabaja .tarjetas, .mainTrabaja .tarjetasProductos {
-      display: flex;
-      justify-content: space-between;
-      font-family: 'Bebas Neue', cursive;
-      padding-top: 20px;
-      width: 100%; }
-    .mainTrabaja .form, .mainTrabaja .formProductos {
-      width: 100%;
-      display: flex;
-      padding-left: 20%;
-      padding-right: 20%;
-      padding-bottom: 20px;
-      background-color: rgba(255, 255, 255, 0.466); }
+  .tituloTrabaja {
+    font-size: 100px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414;
+    background: linear-gradient(to right, #1f7cb9, #46ec25);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; }
+  .introTrabaja {
+    font-size: 40px;
+    text-align: center;
+    width: 100%;
+    font-family: 'Bebas Neue', cursive;
+    color: #141414; }
+  .tarjetas {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', cursive;
+    padding-top: 20px;
+    width: 100%; }
+  .form {
+    width: 100%;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.466); }
   /*MAIN PRODUCTOS*/
   .tarjetasProductos {
     display: flex;
